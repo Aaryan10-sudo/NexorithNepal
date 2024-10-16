@@ -8,7 +8,7 @@ const Courses = () => {
     try {
       let result = await axios({
         method: "GET",
-        url: "http://localhost:3000/course/readall",
+        url: "https://nexorithnepal.onrender.com",
       });
       console.log(result);
       setCourse(result.data.data);
