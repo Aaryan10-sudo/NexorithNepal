@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaBars, FaMagnifyingGlass, FaUser } from "react-icons/fa6";
 
 const NavBar = () => {
+  let [menu, setMenu] = useState(false);
+
   return (
     <nav className="md:mx-[50px] mx-[10px] flex justify-between h-[50px] backdrop-blur-md sticky top-0 z-50 py-[10px]">
       <img src="logo.png" className="h-[30px]" />
@@ -22,8 +24,23 @@ const NavBar = () => {
             <FaMagnifyingGlass />
           </button>
         </form>
-        <FaBars className="md:hidden" />
+        <FaBars
+          className="md:hidden"
+          onClick={() => {
+            setMenu(!menu);
+          }}
+        />
         <FaUser />
+        {menu === true ? (
+          <div className="absolute bg-[white] h-[200px] w-[180px] mt-[230px] right-[0px] rounded-tl-lg rounded-bl-lg">
+            <ul className="text-center flex flex-col gap-[20px] mt-[20px] text-manrope">
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Course</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        ) : null}
       </div>
     </nav>
   );
