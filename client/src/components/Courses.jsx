@@ -29,7 +29,7 @@ const Courses = () => {
               key={index}
               className="h-[450px] w-[270px] border-2 font-manrope"
             >
-              <div className="h-[200px] bg-[url('banner.jpg')] bg-cover bg-center"></div>
+              <div className="h-[200px] bg-[url('/banner.jpg')] bg-cover bg-center"></div>
               <span className="flex justify-between p-[10px]">
                 <p className="h-[30px] w-[100px] text-center justify-center bg-green-400 flex items-center font-medium text-white">
                   {value.level}

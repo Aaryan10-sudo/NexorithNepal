@@ -30,7 +30,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="test bg-[blue] sm:h-[500px] sm:w-[500px] h-[400px] w-[400px] sm:mt-[30px] mt-[60px] overflow-y-hidden">
-          <div className="absolute w-[90px] h-[90px] shadow-2xl bg-[url('react-logo.jpg')] bg-cover bg-center mt-[-20px] rounded-md"></div>
+          <div className="absolute w-[90px] h-[90px] shadow-2xl bg-[url('/react-logo.jpg')] bg-cover bg-center mt-[-20px] rounded-md"></div>
           <img
             src="bulb.png"
             className="absolute h-[90px] mt-[130px] ml-[50px] sm:mt-[150px]"
