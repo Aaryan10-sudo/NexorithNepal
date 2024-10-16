@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaRegHeart } from "react-icons/fa6";
-import { hitApi } from "../services/api/hitApi";
+import { hitApi } from "../services/HitApi";
 
 const Courses = () => {
   let [course, setCourse] = useState([]);
