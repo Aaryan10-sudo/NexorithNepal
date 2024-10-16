@@ -33,7 +33,7 @@ const NavBar = () => {
         <FaUser />
         {menu === true ? (
           <div className="absolute bg-[white] h-[200px] w-[180px] mt-[250px] right-[0px] rounded-tl-lg rounded-bl-lg shadow-lg transition-all ease-linear duration-1000 transform translate-x-0">
-            <ul className="text-center flex flex-col gap-[20px] mt-[20px] text-manrope">
+            <ul className="text-center flex flex-col gap-[20px] mt-[20px] text-manrope cursor-pointer">
               <li>Home</li>
               <li>About Us</li>
               <li>Course</li>

@@ -22,13 +22,13 @@ const Footer = () => {
             <FaLinkedin />
           </div>
         </div>
-        <ul className="flex flex-col gap-[10px] mt-[5px]">
+        <ul className="flex flex-col gap-[20px] mt-[5px] cursor-pointer">
           <h1>Company</h1>
           <li className="font-manrope font-normal text-[15px]">About Us</li>
           <li className="font-manrope font-normal text-[15px]">Contact Us</li>
           <li className="font-manrope font-normal text-[15px]">Carrer</li>
         </ul>
-        <ul className="mt-[5px] flex flex-col gap-[10px] ">
+        <ul className="mt-[5px] flex flex-col gap-[20px] cursor-pointer">
           <h1>Community</h1>
           <li className="font-manrope font-normal text-[15px]">
             Documentation
@@ -37,7 +37,7 @@ const Footer = () => {
           <li className="font-manrope font-normal text-[15px]">Sitemap</li>
           <li className="font-manrope font-normal text-[15px]">Forum</li>
         </ul>
-        <ul className="flex flex-col gap-[10px] mt-[5px]">
+        <ul className="flex flex-col gap-[20px] mt-[5px] cursor-pointer">
           <h1>Courses</h1>
           <li className="font-manrope font-normal text-[15px]">Web Design</li>
           <li className="font-manrope font-normal text-[15px]">
@@ -51,7 +51,7 @@ const Footer = () => {
           </li>
           <li className="font-manrope font-normal text-[15px]">IOT</li>
         </ul>
-        <ul className="flex flex-col gap-[10px] mt-[5px]">
+        <ul className="flex flex-col gap-[20px] mt-[5px] cursor-pointer">
           <h1>Contact</h1>
           <li className="font-manrope font-normal text-[15px]">
             Toll Free: +977 9749442103
