@@ -3,11 +3,13 @@ import { Route, Routes } from "react-router-dom";
 import NavBar from "../components/features/NavBar";
 import Footer from "../components/features/Footer";
 import Hero from "../components/features/Hero";
+import Courses from "../components/Courses";
 
 const HomePage = () => {
   return (
     <div>
       <Hero />
+      <Courses />
     </div>
   );
 };
