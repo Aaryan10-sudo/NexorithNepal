@@ -1,21 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { FaRegHeart } from "react-icons/fa6";
 import { hitApi } from "../services/HitApi";
+import { useCourseQuery } from "../services/courseApi";
 
 const Courses = () => {
-  let [course, setCourse] = useState([]);
-  const getAllCourse = async () => {
-    try {
-      let result = await hitApi({
-        method: "GET",
-      });
-      console.log(result);
-      setCourse(result.data.data);
-    } catch (error) {}
-  };
-  useEffect(() => {
-    getAllCourse();
-  }, []);
+  let { isError, isLoading, data, error } = useCourseQuery();
+
+  console.log(data?.data);
+  let course = data?.data || [];
+
   return (
     <main>
       <h1 className="text-center mt-[50px] font-sora font-extrabold text-[30px]">

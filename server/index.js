@@ -8,6 +8,11 @@ let port = process.env.PORT || 3000;
 app.use(json());
 app.use(cors());
 app.use("/course", courseRouter);
+
+app.get("/readall", (req, res) => {
+  // Your logic to read and respond with data
+  res.json({ message: "Data retrieved successfully!" });
+});
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
