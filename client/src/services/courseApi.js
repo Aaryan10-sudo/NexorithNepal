@@ -5,7 +5,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const courseApi = createApi({
   reducerPath: "courseApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://nexorithnepal-1.onrender.com",
+    baseUrl: "https://nexorithnepal.onrender.com",
   }),
   endpoints: (builder) => ({
     getAllCourses: builder.query({

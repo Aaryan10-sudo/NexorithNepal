@@ -5,7 +5,6 @@ import { useGetAllCoursesQuery } from "../services/courseApi";
 const Courses = () => {
   let { isError, isLoading, data, error } = useGetAllCoursesQuery();
 
-  console.log(data?.data);
   let course = data?.data || [];
 
   return (
@@ -13,12 +12,12 @@ const Courses = () => {
       <h1 className="text-center mt-[50px] font-sora font-extrabold text-[30px]">
         Our Offering Courses
       </h1>
-      <div className="flex mx-[50px] sm:justify-between flex-wrap gap-[50px] sm:gap-0 mt-[20px] justify-center">
+      <div className="flex sm:mx-[50px] mx-[10px]  sm:justify-between flex-wrap gap-[50px] sm:gap-0 mt-[20px] justify-center">
         {course.map((value, index) => {
           return (
             <div
               key={index}
-              className="h-[450px] w-[270px] border-2 font-manrope"
+              className="h-[450px]  sm:w-[270px] w-[full] border-2 font-manrope"
             >
               <div className="h-[200px] bg-[url('/banner.jpg')] bg-cover bg-center"></div>
               <span className="flex justify-between p-[10px]">
