@@ -1,14 +1,14 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { FaRegHeart } from "react-icons/fa6";
+import { hitApi } from "../services/api/hitApi";
 
 const Courses = () => {
   let [course, setCourse] = useState([]);
   const getAllCourse = async () => {
     try {
-      let result = await axios({
+      let result = await hitApi({
         method: "GET",
-        url: "https://nexorithnepal.onrender.com",
       });
       console.log(result);
       setCourse(result.data.data);
