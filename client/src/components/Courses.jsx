@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { FaRegHeart } from "react-icons/fa6";
-import { hitApi } from "../services/HitApi";
-import { useCourseQuery } from "../services/courseApi";
+import { useGetAllCoursesQuery } from "../services/courseApi";
 
 const Courses = () => {
-  let { isError, isLoading, data, error } = useCourseQuery();
+  let { isError, isLoading, data, error } = useGetAllCoursesQuery();
 
   console.log(data?.data);
   let course = data?.data || [];

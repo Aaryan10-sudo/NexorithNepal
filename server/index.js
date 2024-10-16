@@ -10,7 +10,6 @@ app.use(cors());
 app.use("/course", courseRouter);
 
 app.get("/readall", (req, res) => {
-  // Your logic to read and respond with data
   res.json({ message: "Data retrieved successfully!" });
 });
 app.listen(port, () => {

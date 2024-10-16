@@ -8,17 +8,12 @@ export const courseApi = createApi({
     baseUrl: "https://nexorithnepal-1.onrender.com",
   }),
   endpoints: (builder) => ({
-    course: builder.query({
-      query: () => {
-        return {
-          url: "/course/readall",
-          method: "GET",
-        };
-      },
+    getAllCourses: builder.query({
+      query: () => "/course/readall",
     }),
   }),
 });
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useCourseQuery } = courseApi;
+export const { useGetAllCoursesQuery } = courseApi;
