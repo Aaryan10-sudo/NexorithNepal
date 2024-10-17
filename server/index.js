@@ -4,7 +4,7 @@ import connectDB from "./schema/connectDB/connectDB.js";
 import courseRouter from "./router/courseRouter.js";
 connectDB();
 let app = express();
-let port = process.env.PORT || 3000;
+let port = process.env.PORT || 10000;
 app.use(json());
 app.use(cors());
 app.use("/course", courseRouter);
